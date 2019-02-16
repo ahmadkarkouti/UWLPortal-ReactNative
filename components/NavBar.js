@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { UserData } from "../supporting_files/Data";
+import { UserData, screenWidth } from "../supporting_files/Data";
 
 const NavBar = props => (
   <View>
@@ -20,11 +20,12 @@ export default NavBar;
 const View = styled.View``;
 
 const Line = styled.View`
-  width: 100%;
-  height: 1px;
-  background: #e3e3e3;
+  width: ${screenWidth - 32};
+  height: 0.5px;
+  background: rgba(0, 0, 0, 0.05);
   align-self: center;
   bottom: 40px;
+  margin: auto;
 `;
 
 const Container = styled.View`
@@ -40,18 +41,18 @@ const Logo = styled.Image`
 const Name = styled.Text`
   color: black;
   font-weight: bold;
-  font-size: 21px;
+  font-size: 26px;
 `;
 
 const Course = styled.Text`
   color: #929292;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
 `;
 
 const Year = styled.Text`
   color: black;
-  font-size: 11px;
+  font-size: 13px;
 `;
 
 const Image = styled.Image`
@@ -62,5 +63,5 @@ const Image = styled.Image`
   border-width: 0.3px;
   align-self: flex-end;
   bottom: 50px;
-  right: 32px;
+  right: 16px;
 `;

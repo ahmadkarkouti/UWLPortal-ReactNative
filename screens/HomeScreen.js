@@ -24,6 +24,7 @@ class HomeScreen extends React.Component {
 export default HomeScreen;
 
 const View = styled.View`
+  top: 50px;
   background: white;
   flex: 1;
 `;

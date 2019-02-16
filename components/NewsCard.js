@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { screenWidth } from "../supporting_files/Data";
 
 const NewsCard = props => (
   <View>
@@ -20,20 +21,20 @@ const View = styled.View`
 
 const Container = styled.View`
   flex-direction: row;
+  left: 16px;
 `;
 
 const Logo = styled.Image`
   width: 50px;
   height: 50px;
-  left: 16px;
 `;
 
 const Title = styled.Text`
+  width: ${screenWidth - 50 - 16};
   font-size: 15px;
   font-weight: bold;
   color: #303030;
-  left: 28px;
-  width: 235px;
+  left: 16px;
 `;
 
 const Subtitle = styled.Text`
@@ -46,9 +47,8 @@ const Subtitle = styled.Text`
 `;
 
 const Image = styled.Image`
-  width: 342px;
+  width: ${screenWidth - 32};
   height: 240px;
-  left: 16px;
-  right: 16px;
   border-radius: 5px;
+  margin: auto;
 `;
