@@ -6,10 +6,14 @@ const NewsCard = props => (
   <View>
     <Container>
       <Logo source={props.logo} resizeMode="contain" />
-      <Title>{props.title}</Title>
+      <SubContainer>
+        <Title>{props.title}</Title>
+        <Subtitle>{props.subtitle}</Subtitle>
+      </SubContainer>
     </Container>
-    <Subtitle>{props.subtitle}</Subtitle>
+
     <Image source={props.image} resizeMode="cover" />
+    <Seperator />
   </View>
 );
 
@@ -18,6 +22,8 @@ export default NewsCard;
 const View = styled.View`
   margin: 20px 0 0 0;
 `;
+
+const SubContainer = styled.View``;
 
 const Container = styled.View`
   flex-direction: row;
@@ -30,20 +36,21 @@ const Logo = styled.Image`
 `;
 
 const Title = styled.Text`
-  width: ${screenWidth - 50 - 16};
+  width: ${screenWidth - 50 - 16 - 16 - 16};
   font-size: 15px;
   font-weight: bold;
   color: #303030;
   left: 16px;
+  margin-right: 16px;
 `;
 
 const Subtitle = styled.Text`
-  font-size: 11px;
+  font-size: 13px;
   color: #aaaaaa;
-  bottom: 10px;
-  left: 80px;
-  width: 290px;
-  height: 40px;
+  width: ${screenWidth - 50 - 16 - 16 - 16};
+  padding-bottom: 8px;
+  height: 50px;
+  margin: 2px 16px 10px;
 `;
 
 const Image = styled.Image`
@@ -51,4 +58,12 @@ const Image = styled.Image`
   height: 240px;
   border-radius: 5px;
   margin: auto;
+  margin-bottom: 16px;
+`;
+
+const Seperator = styled.View`
+  width: ${screenWidth};
+  height: 10px;
+  background: rgba(0, 0, 0, 0.05);
+  margin: 8px auto;
 `;

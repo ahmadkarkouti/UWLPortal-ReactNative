@@ -6,6 +6,9 @@ import NavBar from "../components/NavBar";
 import News from "../components/News";
 
 class HomeScreen extends React.Component {
+  static navigationOptions = {
+    header: null
+  };
   render() {
     return (
       <View>
@@ -27,4 +30,5 @@ const View = styled.View`
   top: 50px;
   background: white;
   flex: 1;
+  padding-bottom: 30px;
 `;

@@ -26,6 +26,6 @@ const styles = StyleSheet.create({
   gridView: {
     marginTop: -40,
     flex: 1,
-    height: 425
+    height: 450
   }
 });
