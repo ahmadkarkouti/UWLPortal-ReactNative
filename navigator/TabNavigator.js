@@ -8,6 +8,8 @@ import {
 import HomeScreen from "../screens/HomeScreen";
 import ShuttleScreen from "../screens/ShuttleScreen";
 import SettingsScreen from "../screens/SettingsScreen";
+import Timetable from "../screens/Timetable";
+import Registry from "../screens/Registry";
 
 // import { Icon } from "expo";
 
@@ -57,7 +59,7 @@ const Icon = styled.Image`
 `;
 
 const ShuttleStack = createStackNavigator({
-  Shuttle: ShuttleScreen
+  Shuttle: Timetable
 });
 
 ShuttleStack.navigationOptions = () => {
@@ -84,7 +86,7 @@ ShuttleStack.navigationOptions = () => {
 };
 
 const SettingsStack = createStackNavigator({
-  Settings: SettingsScreen
+  Settings: Registry
 });
 
 SettingsStack.navigationOptions = () => {
