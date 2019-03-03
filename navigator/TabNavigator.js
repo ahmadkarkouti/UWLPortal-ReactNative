@@ -8,8 +8,8 @@ import {
 import HomeScreen from "../screens/HomeScreen";
 import ShuttleScreen from "../screens/ShuttleScreen";
 import SettingsScreen from "../screens/SettingsScreen";
-import Timetable from "../screens/Timetable";
-import Registry from "../screens/Registry";
+import TimetableScreen from "../screens/Timetable";
+import RegistryScreen from "../screens/Registry";
 
 // import { Icon } from "expo";
 
@@ -19,7 +19,9 @@ const activeColor = "#FF453B";
 const inActiveColor = "#b8bece";
 
 const HomeStack = createStackNavigator({
-  Home: HomeScreen
+  Home: HomeScreen,
+  Timetable: TimetableScreen,
+  Registry: RegistryScreen
 });
 
 HomeStack.navigationOptions = ({ navigation }) => {
@@ -59,7 +61,7 @@ const Icon = styled.Image`
 `;
 
 const ShuttleStack = createStackNavigator({
-  Shuttle: Timetable
+  Shuttle: ShuttleScreen
 });
 
 ShuttleStack.navigationOptions = () => {
@@ -86,7 +88,7 @@ ShuttleStack.navigationOptions = () => {
 };
 
 const SettingsStack = createStackNavigator({
-  Settings: Registry
+  Settings: SettingsScreen
 });
 
 SettingsStack.navigationOptions = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Dimensions } from "react-native";
+import { Dimensions, Date } from "react-native";
 
 export const screenHeight = Dimensions.get("window").height;
 export const screenWidth = Dimensions.get("window").width;
@@ -8,77 +8,92 @@ export const PortalData = [
   {
     name: "My Timetable",
     code: "#008988",
-    image: require("../assets/portal-icons/timetable1.png")
+    image: require("../assets/portal-icons/timetable1.png"),
+    navigator: "Timetable"
   },
   {
     name: "My Blackboard",
     code: "#BF9839",
-    image: require("../assets/portal-icons/blackboard2.png")
+    image: require("../assets/portal-icons/blackboard2.png"),
+    navigator: ""
   },
   {
     name: "My Email",
     code: "#014A87",
-    image: require("../assets/portal-icons/newout1.png")
+    image: require("../assets/portal-icons/newout1.png"),
+    navigator: ""
   },
   {
     name: "My UWL One Drive",
     code: "#03A4EC",
-    image: require("../assets/portal-icons/onedrive.png")
+    image: require("../assets/portal-icons/onedrive.png"),
+    navigator: ""
   },
   {
     name: "My Registry",
     code: "#BB3800",
-    image: require("../assets/portal-icons/registry.png")
+    image: require("../assets/portal-icons/registry.png"),
+    navigator: "Registry"
   },
   {
     name: "Library",
     code: "#A75509",
-    image: require("../assets/portal-icons/library.png")
+    image: require("../assets/portal-icons/library.png"),
+    navigator: ""
   },
   {
     name: "UWL Honours",
     code: "#014A87",
-    image: require("../assets/portal-icons/calculator.png")
+    image: require("../assets/portal-icons/calculator.png"),
+    navigator: ""
   },
   {
     name: "Students' Union",
     code: "#583D8C",
-    image: require("../assets/portal-icons/su.png")
+    image: require("../assets/portal-icons/su.png"),
+    navigator: ""
   },
   {
     name: "Lynda.com Tutorials",
     code: "#D8811A",
-    image: require("../assets/portal-icons/lynda.png")
+    image: require("../assets/portal-icons/lynda.png"),
+    navigator: ""
   },
   {
     name: "UWL Skype",
     code: "#458B31",
-    image: require("../assets/portal-icons/skype-logo.png")
+    image: require("../assets/portal-icons/skype-logo.png"),
+    navigator: ""
   },
   {
     name: "Attendance",
     code: "#CE0755",
-    image: require("../assets/portal-icons/attendance.png")
+    image: require("../assets/portal-icons/attendance.png"),
+    navigator: ""
   },
   {
     name: "Campus",
     code: "#009086",
-    image: require("../assets/portal-icons/school-campus.png")
+    image: require("../assets/portal-icons/school-campus.png"),
+    navigator: ""
   },
   {
     name: "Employability",
     code: "#BB3901",
-    image: require("../assets/portal-icons/businessman.png")
+    image: require("../assets/portal-icons/businessman.png"),
+    navigator: ""
   },
   {
     name: "Student Services",
     code: "#02A4EC",
-    image: require("../assets/portal-icons/infouwl.png")
+    image: require("../assets/portal-icons/infouwl.png"),
+    navigator: ""
   },
   {
     name: "IT Help' Union",
     code: "#583D8C",
-    image: require("../assets/portal-icons/support.png")
+    image: require("../assets/portal-icons/support.png"),
+    navigator: ""
   }
 ];
 

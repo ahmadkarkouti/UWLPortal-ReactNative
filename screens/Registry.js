@@ -6,13 +6,19 @@ import RegistryCard from "../components/RegistryCard";
 
 export default class Registry extends Component {
   static navigationOptions = {
-    header: null
+    title: "My Registry",
+    headerTintColor: "#ffffff",
+    headerStyle: {
+      backgroundColor: "#00ACF8",
+      elevation: 0,
+      shadowOpacity: 0,
+      borderBottomWidth: 0
+    }
   };
 
   render() {
     return (
       <View style={{ flex: 1 }}>
-        <NaviBar title="My Registry" />
         <ScrollView>
           {registryData.map((data, index) => (
             <RegistryCard

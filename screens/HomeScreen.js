@@ -15,7 +15,7 @@ class HomeScreen extends React.Component {
         <SafeAreaView>
           <ScrollView>
             <NavBar />
-            <PortalGrid />
+            <PortalGrid navigation={this.props.navigation} />
             <News />
           </ScrollView>
         </SafeAreaView>
